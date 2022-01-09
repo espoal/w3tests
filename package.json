@@ -1,0 +1,17 @@
+{
+  "name": "w3tests",
+  "packageManager": "yarn@3.1.1",
+  "scripts": {
+    "lint": "ts-standard --fix",
+    "build": "yarn workspace dist build",
+    "watch": "yarn workspace dist watch"
+  },
+  "workspaces": [
+    "pkgs/*",
+    "libs/*",
+    "dist"
+  ],
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
